@@ -1,0 +1,105 @@
+
+.puppap {
+    position: absolute;
+    top: 105px;
+    right: 95px;
+    width: 400px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    overflow: auto;
+}
+.productosSeleccionados{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    max-height: 100px;
+    
+}
+
+.cantidad {
+    flex: 1;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.nombre {
+    flex: 7;
+    padding: 3px;
+}
+
+
+.precio {
+    flex: 1.5;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.buttons {
+    flex: 0.5;
+    padding: 3px;
+}
+
+
+
+.agregar, .quitar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: #535bf2;
+    border: 0;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: .5s;
+
+
+}
+.agregar:hover, .quitar:hover{
+    background-color: #a1a5ec;
+    color: #000000;
+}
+
+.precioFinal {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.226);
+}
+
+.buttonera {
+    display: flex;
+    height: 30px;
+}
+
+.comprar, .vaciar {
+    flex: 1;
+    background-color: #535bf2;
+    border: 0;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+
+}
+
+.comprar {
+    border-bottom-right-radius: 10px;
+}
+
+.vaciar {
+    border-right: 1px solid rgba(0, 0, 0, 0.123);
+    border-bottom-left-radius: 10px;
+}
+
+.vaciar:hover, .comprar:hover{
+    background-color: #a1a5ec;
+    color: #000000;
+}
