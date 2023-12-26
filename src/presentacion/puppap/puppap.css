@@ -103,3 +103,16 @@
     background-color: #a1a5ec;
     color: #000000;
 }
+
+
+@media only screen and (max-width: 416px) {
+
+    .puppap {
+        top: 105px;
+        right: 5px;
+        width: 350px;
+
+    }
+
+}
+  

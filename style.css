@@ -180,6 +180,19 @@ article .precioCompra {
   color: #000000;
 }
 
+@media only screen and (max-width: 416px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header img {
+    width: 75px;
+    cursor: pointer;
+  }
+
+}
+
 
 
 
