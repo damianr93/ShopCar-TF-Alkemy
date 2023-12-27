@@ -1,14 +1,24 @@
 
 export let carrito =[]
 
-export const limpiarCarrito = () => {
+/**
+ * The function `limpiarCarrito` clears the contents of the `carrito` array.
+ */
+export const limpiarCarrito = () => { carrito = [] }
 
-    carrito = []
-
-}
-
+/**
+ * The function "obtenerCarrito" returns the value of the variable "carrito".
+ * @returns the value of the variable "carrito".
+ */
 export const obtenerCarrito = () => { return carrito }
 
+/**
+ * The function `agregarAlCarro` adds a selected product to the shopping cart, updating the quantity if
+ * the product already exists in the cart.
+ * @param productoSeleccionado - The parameter "productoSeleccionado" is an object that represents the
+ * selected product. It should have the following properties:
+ * @returns the updated carrito array.
+ */
 export const agregarAlCarro = (productoSeleccionado) => {
 
     let productoEnCarrito = {}

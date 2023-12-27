@@ -8,6 +8,12 @@ import { comprar } from '../../casos-de-usos/compra';
 
 const carrito = document.querySelector('.iconoCarrito');
 
+/**
+ * The function `renderPuppap` creates a pop-up container and adds event listeners to show and hide the
+ * container when a button is clicked.
+ * @param HTMLelement - The "element" parameter is the DOM element to which the puppap container will be
+ * appended.
+ */
 export const renderPuppap = (element) => {
 
     const puppapContenedor = document.createElement('div')

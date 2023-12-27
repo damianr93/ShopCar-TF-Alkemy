@@ -2,6 +2,10 @@ import { eliminarValorContador } from "../presentacion/puppap/cantidad-productos
 import { totalPagar } from "../presentacion/puppap/valor-final";
 import { limpiarCarrito, obtenerCarrito } from "./agregarAlCarrito"
 
+/**
+ * The `comprar` function is an event listener that triggers when the "comprar" button is clicked, and
+ * it displays an alert message with the products purchased and the total amount paid.
+ */
 export const comprar = () => {
 
     const HTMLelement = document.querySelector('.productosContenedor')

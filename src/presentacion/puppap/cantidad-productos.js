@@ -1,31 +1,33 @@
+import { obtenerCarrito } from "../../casos-de-usos/agregarAlCarrito";
 
-let cantidadProductos = 0;
+/**
+ * The function `actualizarValorContador` updates the value of a counter element based on the quantity
+ * of items in a shopping cart.
+ */
+export const actualizarValorContador = () => {
 
-export const incrementarValorContador = () => {
+    const contador = document.querySelector('.contador')
     
-    let contador = document.querySelector('.contador')
+    const carrito = obtenerCarrito()
+    
+    let cantidadTotal = 0;
+    
+    carrito.forEach(producto => {
+        
+        let cantidadPorProducto = producto.cantidad
 
-    cantidadProductos += 1
-
-    contador.innerText = cantidadProductos;
-
+        cantidadTotal += cantidadPorProducto
+    })
+    
+    contador.innerText = cantidadTotal;
 }
 
-export const disminuirValorContador = () => {
-    
-    let contador = document.querySelector('.contador')
-
-    cantidadProductos -= 1
-
-    contador.innerText = cantidadProductos;
-
-}
-
+/**
+ * The function `eliminarValorContador` sets the value of a counter to 0.
+ */
 export const eliminarValorContador = () => {
 
     let contador = document.querySelector('.contador')
-
-    cantidadProductos = 0;
 
     contador.innerText = 0;
 

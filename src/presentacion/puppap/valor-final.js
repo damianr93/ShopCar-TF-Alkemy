@@ -1,5 +1,9 @@
 import { obtenerCarrito } from "../../casos-de-usos/agregarAlCarrito"
 
+/**
+ * The function calculates the total price of items in a shopping cart and updates the displayed price.
+ * @returns the total amount to be paid, rounded to 2 decimal places.
+ */
 export const totalPagar = () => {
 
     const precio = document.querySelector('.precioPagar')
