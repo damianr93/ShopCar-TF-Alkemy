@@ -1,4 +1,4 @@
-# Nombre del Proyecto
+# ShopCar - TF Alkemy
 
 ShopCar es un sencillo carrito de compras desarrollado como parte del Trabajo Final del programa de Alkemy. La aplicación utiliza la [Fake Store API](https://fakestoreapi.com/docs) para obtener una lista de productos ficticios que los usuarios pueden explorar y comprar.
 
