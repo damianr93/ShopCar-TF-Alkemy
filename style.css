@@ -186,9 +186,20 @@ article .precioCompra {
     font-size: 1.5rem;
   }
 
+  header {
+    position: fixed;
+    z-index: 1;
+    background-color: #8faee7;
+    top: 0;
+  }
+
   header img {
     width: 75px;
     cursor: pointer;
+  }
+
+  section {
+    margin-top: 80px;
   }
 
 }

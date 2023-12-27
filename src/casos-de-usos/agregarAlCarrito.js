@@ -1,10 +1,17 @@
 
-export let carrito =[]
+let carrito =[]
 
 /**
  * The function `limpiarCarrito` clears the contents of the `carrito` array.
  */
 export const limpiarCarrito = () => { carrito = [] }
+
+/**
+ * The function "actualizarCarrito" updates the value of the variable "carrito" with a new value.
+ * @param nuevoCarrito - The parameter "nuevoCarrito" is a new array that represents the updated
+ * shopping cart.
+ */
+export const actualizarCarrito = (nuevoCarrito) => { return carrito = nuevoCarrito}
 
 /**
  * The function "obtenerCarrito" returns the value of the variable "carrito".
@@ -47,7 +54,6 @@ export const agregarAlCarro = (productoSeleccionado) => {
         }
         carrito.push(productoEnCarrito)
     }    
-    return carrito
 }
 
 

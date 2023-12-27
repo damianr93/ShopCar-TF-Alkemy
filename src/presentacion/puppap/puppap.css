@@ -108,6 +108,7 @@
 @media only screen and (max-width: 416px) {
 
     .puppap {
+        position: fixed;
         top: 105px;
         right: 5px;
         width: 350px;

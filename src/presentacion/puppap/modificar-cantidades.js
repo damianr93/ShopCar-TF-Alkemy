@@ -1,4 +1,4 @@
-import { obtenerCarrito } from "../../casos-de-usos/agregarAlCarrito"
+import { actualizarCarrito, obtenerCarrito } from "../../casos-de-usos/agregarAlCarrito"
 import { actualizarValorContador } from "./cantidad-productos"
 import { totalPagar } from "./valor-final"
 
@@ -27,6 +27,8 @@ export const sumarCantidadProducto= () => {
                 }
 
             })
+
+            actualizarCarrito(carrito)
 
             actualizarValorContador()
   
@@ -63,10 +65,11 @@ export const restarCantidadProducto= () => {
                 }
             })
 
+            actualizarCarrito(carrito)
+
             actualizarValorContador()
       
             totalPagar()
-
         })
     })
 }
